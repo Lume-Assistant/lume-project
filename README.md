@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lume
 
-## Getting Started
+Lume é um assistente financeiro inteligente que funciona diretamente no WhatsApp.
 
-First, run the development server:
+A proposta é simples: registrar gastos, organizar a vida financeira e gerar insights sem exigir planilhas, apps complexos ou esforço desnecessário do usuário.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡 Visão
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A Lume nasce da ideia de que controle financeiro não deveria ser complicado.  
+Em vez de obrigar o usuário a se adaptar a sistemas rígidos, a Lume se adapta à forma natural como ele já se comunica: mensagens.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Como funciona
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- O usuário envia uma mensagem como:
+  - "Gastei R$ 50 no mercado"
+- A Lume interpreta automaticamente:
+  - valor
+  - categoria
+  - contexto
+- Os dados são organizados e transformados em:
+  - relatórios
+  - gráficos
+  - previsões financeiras
 
-## Learn More
+## 🧠 Diferencial
 
-To learn more about Next.js, take a look at the following resources:
+- Interface baseada em conversa (WhatsApp)
+- Uso de IA para classificação automática
+- Experiência simples, rápida e acessível
+- Foco em reduzir atrito, não adicionar complexidade
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js
+- React
+- Tailwind CSS v4
+- shadcn/ui
 
-## Deploy on Vercel
+## 📦 Status
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projeto em desenvolvimento (MVP em construção).
