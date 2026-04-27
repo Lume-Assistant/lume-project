@@ -261,3 +261,30 @@ h3,
     radial-gradient(rgba(44, 62, 80, 0.08) 1px, transparent 1px);
   background-size: 18px 18px;
 }
+
+@keyframes sheetSlideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sheetSlideOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

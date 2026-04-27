@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LumeMark from "@/components/lume/lume-mark";
+import Link from "next/link";
 
 const links = [
   { label: "Como funciona", href: "#como-funciona" },
@@ -51,13 +52,15 @@ export default function Header() {
           <Button className="rounded-full bg-white px-6 text-primary-dark transition hover:-translate-y-0.5 hover:bg-white/90">
             Começar
           </Button>
+          <Link  href="/dashboard">   
           <Button className=" rounded-full border-white/20 bg-white/5 px-6 text-white transition hover:-translate-y-0.5 hover:bg-white/10">
             Dashboard
           </Button>
+          </Link>
         </div>
 
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white md:hidden cursor-pointer"
           onClick={() => setOpen(!open)}
           aria-label="Abrir menu"
         >
@@ -82,9 +85,12 @@ export default function Header() {
                 <Button className="rounded-full bg-white px-6 text-primary-dark transition hover:-translate-y-0.5 hover:bg-white/90">
                 Começar
               </Button>
-              <Button className=" rounded-full border-white/20 bg-white/5 px-6 text-white transition hover:-translate-y-0.5 hover:bg-white/10">
-                Dashboard
-              </Button>
+              <Button
+              asChild
+              className="rounded-full border-white/20 bg-white/5 px-6 text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+            >
+              <Link href="/dashboard">Dashboard</Link>
+            </Button>
           </nav>
         </div>
       )}
