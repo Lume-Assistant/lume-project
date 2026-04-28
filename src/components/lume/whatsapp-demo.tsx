@@ -37,7 +37,7 @@ const messages = [
 
 export default function WhatsAppDemo() {
   return (
-    <div className="relative mx-auto w-full max-w-107 animate-float-slow">
+    <div className="relative mx-auto w-full max-w-96 min-w-72 animate-float-slow">
       {/* glow */}
       <div className="absolute inset-6 rounded-[3rem] bg-primary-light/30 blur-3xl" />
 

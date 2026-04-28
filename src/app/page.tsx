@@ -163,20 +163,21 @@ export default function Page() {
               </Button>
             </div>
 
-            <div className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-8 opacity-0 animate-fade-up delay-500">
+            <div className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-8 opacity-0 animate-fade-up delay-500 ">
               {[
                 ["30 mensagens", "Grátis para começar"],
                 ["Organização", "Classificação automática"],
                 ["100% Whatsapp", "Sem App novo"],
               ].map(([value, label], index) => (
                 <div key={label} className="transition hover:-translate-y-1">
-                  <p className="text-2xl font-bold tracking-[-0.04em]">
+                  <p className="text-base sm:text-2xl font-bold tracking-[-0.04em]">
                     {value}
                   </p>
                   <p className="mt-1 text-xs text-white/55">{label}</p>
                 </div>
               ))}
             </div>
+
           </div>
 
           <div className="opacity-0 animate-fade-right delay-300">
