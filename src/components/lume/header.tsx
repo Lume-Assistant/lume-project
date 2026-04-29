@@ -49,9 +49,11 @@ export default function Header() {
         </nav>
 
         <div className="hidden opacity-0 animate-fade-left delay-500 md:flex gap-8">
+          <Link href="/register">
           <Button className="rounded-full bg-white px-6 text-primary-dark transition hover:-translate-y-0.5 hover:bg-white/90">
             Começar
           </Button>
+          </Link>
           <Link  href="/dashboard">   
           <Button className=" rounded-full border-white/20 bg-white/5 px-6 text-white transition hover:-translate-y-0.5 hover:bg-white/10">
             Dashboard
@@ -82,8 +84,8 @@ export default function Header() {
               </a>
             ))}
 
-                <Button className="rounded-full bg-white px-6 text-primary-dark transition hover:-translate-y-0.5 hover:bg-white/90">
-                Começar
+                <Button asChild className="rounded-full bg-white px-6 text-primary-dark transition hover:-translate-y-0.5 hover:bg-white/90">
+                <Link href="/register">Começar</Link>
               </Button>
               <Button
               asChild

@@ -18,6 +18,7 @@ import {
   Eye
 } from "lucide-react";
 
+import Link from "next/link";
 import Header from "@/components/lume/header";
 import WhatsAppDemo from "@/components/lume/whatsapp-demo";
 import LumeMark from "@/components/lume/lume-mark";
@@ -150,7 +151,7 @@ export default function Page() {
                 size="lg"
                 className="h-14 rounded-full bg-white px-8 text-base font-semibold text-primary-dark transition hover:-translate-y-1 hover:bg-white/90 hover:shadow-2xl"
               >
-                Começar
+                <Link href="/register">Começar</Link>
                 <ArrowRight className="ml-2" size={18} />
               </Button>
 
@@ -159,7 +160,7 @@ export default function Page() {
                 variant="secondary"
                 className="h-14 rounded-full border-white/20 bg-white/5 px-8 text-base text-white transition hover:-translate-y-1 hover:bg-white/10 hover:text-white"
               >
-                Ver como funciona
+                <Link href="/login">Já tenho conta</Link>
               </Button>
             </div>
 
