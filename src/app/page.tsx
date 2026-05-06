@@ -504,7 +504,7 @@ export default function Page() {
                 Transforme suas mensagens em controle financeiro de verdade.
               </p>
 
-              <div className="mx-auto mt-9 flex max-w-xl flex-col gap-3 rounded-full bg-white p-2 shadow-2xl sm:flex-row opacity-0 animate-fade-up delay-300">
+              <div className="mx-auto mt-9 flex max-w-xl flex-col gap-3 rounded-full bg-white py-4 px-7 shadow-2xl sm:flex-row opacity-0 animate-fade-up delay-300">
                 <Input
                   type="email"
                   placeholder="Digite seu melhor e-mail"
